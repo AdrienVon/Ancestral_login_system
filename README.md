@@ -1,2 +1,2 @@
-# ancestral_login_system
-祖传的登陆系统模板
+# GTXY_ID_PHOTO_backend
+GTXY_ID_PHOTO证件照项目后端

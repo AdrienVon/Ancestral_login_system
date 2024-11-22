@@ -38,6 +38,6 @@ public class AccountService {
         );
 
         cn.gzxy.gtxyrgzn.model.Account save = accountRepository.save(account);
-        return new AccountDto.Account(save.username());
+        return new AccountDto.Account(save.username(), save.password());
     }
 }
