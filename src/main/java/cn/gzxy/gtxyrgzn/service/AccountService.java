@@ -22,7 +22,7 @@ public class AccountService {
         cn.gzxy.gtxyrgzn.model.Account account = accountRepository.findByUsername(login.username());
         if (!BCrypt.verifyer().verify(login.password().toCharArray(), account.password()).verified) return null;
 
-        return new AccountDto.Account(account.username(), account.password());
+        return new AccountDto.Account(account.username());
     }
 
     public AccountDto.Account register(AccountDto.Register register) {
@@ -38,6 +38,6 @@ public class AccountService {
         );
 
         cn.gzxy.gtxyrgzn.model.Account save = accountRepository.save(account);
-        return new AccountDto.Account(save.username(), save.password());
+        return new AccountDto.Account(save.username());
     }
 }

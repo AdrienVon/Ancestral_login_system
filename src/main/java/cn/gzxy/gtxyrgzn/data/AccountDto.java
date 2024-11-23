@@ -7,6 +7,6 @@ public class AccountDto {
     public record Login(String username, String password) {
     }
 
-    public record Account(String username, String password) {
+    public record Account(String username) {
     }
 }
